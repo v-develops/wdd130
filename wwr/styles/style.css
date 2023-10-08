@@ -3,3 +3,137 @@
     text-align: center;
     margin: 0 auto;
 }
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+}
+
+#hero-msg h1 {
+    text-align: center;
+}
+
+#hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+/* Sizes */
+
+#background {
+    height: 725px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
+/* Colors */
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #2E5C60;
+}
+
+nav a:hover {
+    background-color: #80D8D6;
+}
+
+.book, .join {
+    background-color: #2E5C60;
+    text-decoration: none;
+}
+
+.book:hover, .join:hover {
+    background-color: #80D8D6;
+}
+
+#background {
+    background-color: #2E5C60;
+}
+
+.msg {
+    background-color: #2E5C60;
+}
+
+footer {
+    background-color: #2E5C60;
+}
+
+/* Background color */
+
+nav a {
+    background-color: #2E5C60;
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.home-title {
+    background-color: #2E5C60;
+    color: #ffffff;
+}
+
+h4 {
+    background-color: #2E5C60;
+    color: #ffffff;
+}
+
+.book, .join {
+    color: #ffffff;
+}
+
+.book:hover, .join:hover {
+    color: #ffffff;
+}
+
+.msg h2 {
+    background-color: #2E5C60;
+    color: #ffffff; 
+}
+
+.msg p {
+    background-color: #2E5C60;
+    color: #ffffff;
+}
+
+footer {
+    color: #ffffff
+}
+
+footer a {
+    background-color: #2E5C60;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: #80D8D6;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
