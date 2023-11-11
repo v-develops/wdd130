@@ -275,6 +275,7 @@ h3 {
     font-family: var(--heading-font);
     color: #2E5C60;
     text-align: center;
+    border-radius: 5px
 
 }
 
