@@ -250,6 +250,46 @@ main section img {
     box-sizing: border-box;
 }
 /*=====================================*/
+#hero-msg h5 {
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    font-family: var(--heading-font);
+    color: #ffffff;
+    font-size: 5.4em;
+    margin-bottom: 50px
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: #2E5C60;
+    text-align: center;
+    margin-bottom: 100px
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: #2E5C60;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.questions {
+    font-family: var(--paragraph-font);
+    color: #438889;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/*=====================================*/
+#content2 {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/*=====================================*/
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
