@@ -265,6 +265,9 @@ h1 {
     font-family: var(--heading-font);
     color: #2E5C60;
     text-align: center;
+}
+
+.faqh1 {
     margin-bottom: 150px
 }
 
