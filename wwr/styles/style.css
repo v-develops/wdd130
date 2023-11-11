@@ -265,15 +265,14 @@ h1 {
     font-family: var(--heading-font);
     color: #2E5C60;
     text-align: center;
-    margin-bottom: 100px
+    margin-bottom: 150px
 }
 
 h3 {
     font-family: var(--heading-font);
     color: #2E5C60;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 30px;
+
 }
 
 .questions {
@@ -284,6 +283,12 @@ h3 {
     padding-right: 150px;
 }
 
+.colored {
+    background-color: #2E5C60;
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 /*=====================================*/
 #content2 {
     max-width: 1600px;
