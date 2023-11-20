@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celestial-astronomy</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Astronomy logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="astronomic-calendar.html">Event calendar</a>
+                <a href="planet-visibility.html">Planet visibility</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="introduction">
+                <h1 class="home-title">Welcome to the world of Stargazing!</h1>
+                <h4>This website aims to help you understand more about the amazing hobby of stargazing or spacial photography. You will learn a little bit of everything here, from tips of better night view to recommended equipment and a monthly updated calendar to help you keep track of everything! </h4>
+                <div class='calendar-buttom'>
+                    <a class='calendar-redirect' href="astronomic-calendar.html">See the calendar here!</a>
+                </div>
+            </section>
+
+            <!--============================================================================================-->
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/boreal.png" style="width:100%">
+                <div class="text">Aurora borealis</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/starview.png" style="width:100%">
+                <div class="text">Starry sky</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/supermoon.png" style="width:100%">
+                <div class="text">Blue supermoon (2023)</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!--============================================================================================-->
+
+            <div id="tips&info">
+                <section class="howtostart-card">
+                    <h2>How to start?</h2>
+                    <img class="card-img" src="images/peoplelooking.png" alt="people looking at the sky">
+                    <p>Thankfully we dont actually need anything to start stargazing! All you want to do is find a good spot to lay down and abserve the night sky. But if you want to a have a really good view, you need to travel away from your city, because cities are heavily light polluted, and that pollution conceal a huge ammount of the night stars.</p>
+                </section>
+
+                <section class="whattobring-card">
+                    <h2>What should I bring?</h2>
+                    <img class="card-img" src="images/meteorrain.png" alt="meteor rain">
+                    <p>There are three basic things that you should always bring even if you are going to stay at your backyard. The first one is snacks (especially if you're going to watch things that take hours like meteor showers). The second one is your cellphone with an app or something similar that can help you locate the constelations and planetes you want to see. And the last thing is patience! You are going to observe a natural phenomenon, you cant control the exact time it is going to happen, so bring lots of patience!</p>
+                </section>
+
+                <section class="whattools-card">
+                    <h2>What devices do I need?</h2>
+                    <img class="card-img" src="images/telescope.png" alt="humble telescope">
+                    <p>The most basic one is a pair of binoculars. They are going to help you locate planets more easily and are going to allow you to have a better view of certain events like the supermoons. If you want to look at planets then you will need a telescope. Telescopes are harder to use (and a good one is a bit expensive) and will require you to have some practice first, but they are going to allow a close view of our solar system planets! you can even see the charming colossal saturn rings with them! And the least popular one is a high zoom camera. These cameras are not as poweful as a telescope, but they will let you take amazing pictures of the closer celestial bodies like the moon and jupiter. You can also use both camera and telescope together in order to take high quality photos and videos of the planets and stars!</p>
+                </section>
+
+                <section class="extratips-card">
+                    <h2>Extra tips!</h2>
+                    <img class="card-img" src="images/jupitercamera.png" alt="jupiter camera photography">
+                    <p>Always check the weather forecast before going to stargaze, you really dont want to have your night ruined because of rain or clouds. <p>Differently from the stars, planets have a "fixed" bright, so if the "star" you are looking at is not rapidly blinking, its actually a planet!</p>
+                </section>
+                <div class='planet-buttom'>
+                    <a class='planet-redirect' href="planet-visibility.html">Discover the visible planets here!</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Celestial Astronomy &copy; 2023 - Victor Andrade</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactme.html">Contact me</a></p>
+        </footer>
+
+    </div>
+
+    <!--============================================================================================-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <!--============================================================================================-->
+
+</body>
+
+</html>

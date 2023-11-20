@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>planet-visibility</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    /*body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }*/
+
+    .solar-system {
+      position: relative;
+      width: 800px;
+      height: 650px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .sun {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      top: calc(50% - 30px);
+      left: calc(50% - 30px);
+      background-color: #ffdb58;
+      animation: spin 5s linear infinite;
+    }
+
+    .planet {
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      animation: orbit 8s linear infinite;
+    }
+
+    .planet.mercury {
+      animation: orbit-mercury 4s linear infinite;
+      width: 10px;
+      height: 10px;
+      background-color: #767676;
+    }
+
+    .planet.venus {
+      animation: orbit-venus 6s linear infinite;
+      width: 15px;
+      height: 15px;
+      background-color: #e6e6e6 ;
+    }
+
+    .planet.earth {
+      animation: orbit-earth 8s linear infinite;
+      width: 20px;
+      height: 20px;
+      background-color: #3498db;
+    }
+
+    .planet.mars {
+      animation: orbit-mars 20s linear infinite;
+      width: 18px;
+      height: 18px;
+      background-color: #993d00;
+    }
+
+    .planet.jupiter {
+      animation: orbit-jupiter 40s linear infinite;
+      width: 35px;
+      height: 35px;
+      background-color: #b07f35;
+    }
+
+    .planet.saturn {
+      animation: orbit-saturn 50s linear infinite;
+      width: 30px;
+      height: 10px;
+      background-color: #b08f36;
+    }
+
+    .planet.uranus {
+      animation: orbit-uranus 50s linear infinite;
+      width: 24px;
+      height: 22px;
+      background-color: #6f9ecb;
+    }
+
+    .planet.neptune {
+      animation: orbit-neptune 60s linear infinite;
+      width: 26px;
+      height: 20px;
+      background-color: rgb(30, 55, 147);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes orbit {
+      0% { transform: rotate(0deg) translateX(250px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+    }
+
+    @keyframes orbit-mercury {
+      0% { transform: rotate(0deg) translateX(80px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(80px) rotate(-360deg); }
+    }
+
+    @keyframes orbit-venus {
+      0% { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+    }
+
+    @keyframes orbit-earth {
+      0% { transform: rotate(20deg) translateX(140px) rotate(0deg); }
+      100% { transform: rotate(380deg) translateX(140px) rotate(-360deg); }
+    }
+
+    @keyframes orbit-mars {
+      0% { transform: rotate(50deg) translateX(170px) rotate(0deg); }
+      100% { transform: rotate(410deg) translateX(170px) rotate(-360deg); }
+    }
+
+    @keyframes orbit-jupiter {
+      0% { transform: rotate(90deg) translateX(200px) rotate(0deg); }
+      100% { transform: rotate(450deg) translateX(200px) rotate(-360deg); }
+    }
+
+    @keyframes orbit-saturn {
+      0% { transform: rotate(140deg) translateX(240px) rotate(0deg); }
+      100% { transform: rotate(500deg) translateX(240px) rotate(-360deg); }
+    }
+
+    @keyframes orbit-uranus {
+      0% { transform: rotate(180deg) translateX(270px) rotate(0deg); }
+      100% { transform: rotate(540deg) translateX(270px) rotate(-360deg); }
+    }
+
+    @keyframes orbit-neptune {
+      0% { transform: rotate(220deg) translateX(300px) rotate(0deg); }
+      100% { transform: rotate(580deg) translateX(300px) rotate(-360deg); }
+    }
+  </style>
+</head>
+
+<body>
+
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Astronomy logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="astronomic-calendar.html">Event calendar</a>
+                <a href="planet-visibility.html">You are here!</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="introduction">
+                <h1 class="home-title">Night sky planet visibility</h1>
+            </section>
+
+            <div class="solar-system">
+                <div class="sun"></div>
+                <div class="planet mercury"></div>
+                <div class="planet venus"></div>
+                <div class="planet earth"></div>
+                <div class="planet mars"></div>
+                <div class="planet jupiter"></div>
+                <div class="planet saturn"></div>
+                <div class="planet uranus"></div>
+                <div class="planet neptune"></div>
+            </div>
+
+            <div id="planets-info">
+                <section class="planet-1">
+                    <img class="card-img" src="images/mercury.png" alt="mercury symbol">
+                    <h2>Mercury</h2>
+                    <p>Visible</p>
+                </section>
+
+                <section class="planet-2">
+                    <img class="card-img" src="images/venus.png" alt="venus symbol">
+                    <h2>Venus</h2>
+                    <p>Visible</p>
+                </section>
+
+                <section class="planet-3">
+                    <img class="card-img" src="images/earth.png" alt="earth symbol">
+                    <h2>Earth</h2>
+                    <p>We are here!</p>
+                </section>
+
+                <section class="planet-4">
+                    <img class="card-img" src="images/mars.png" alt="mars symbol">
+                    <h2>Mars</h2>
+                    <p>Invisible</p>
+                </section>
+
+                <section class="planet-5">
+                    <img class="card-img" src="images/jupiter.png" alt="jupiter symbol">
+                    <h2>Jupiter</h2>
+                    <p>Visible</p>
+                </section>
+
+                <section class="planet-6">
+                    <img class="card-img" src="images/saturn.png" alt="saturn symbol">
+                    <h2>Saturn</h2>
+                    <p>Visible</p>
+                </section>
+
+                <section class="planet-7">
+                    <img class="card-img" src="images/uranus.png" alt="uranus symbol">
+                    <h2>Uranus</h2>
+                    <p>Invisible</p>
+                </section>
+
+                <section class="planet-8">
+                    <img class="card-img" src="images/neptune.png" alt="neptune symbol">
+                    <h2>Neptune</h2>
+                    <p>Invisible</p>
+                </section>
+        </main>
+
+        <footer>
+            <p>Celestial Astronomy &copy; 2023 - Victor Andrade</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactme.html">Contact me</a></p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
+
