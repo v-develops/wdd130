@@ -5,28 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>celestial-astronomy</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        body {
+          background-image: url('images/galaxy2.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: 100%;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="content">
+
         <header>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.png" alt="Astronomy logo">
+                <img class="logo" src="images/logo2.png" alt="Astronomy logo">
             </a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="astronomic-calendar.html">Event calendar</a>
-                <a href="planet-visibility.html">Planet visibility</a>
+                <a href="index.html">HOME</a>
+                <a href="astronomic-calendar.html">EVENT CALENDAR</a>
+                <a href="planet-visibility.html">PLANET VISIBILITY</a>
+                <a href="contactme.html">CONTACT ME</a>
             </nav>
         </header>
 
         <main>
             <section id="introduction">
-                <h1 class="home-title">Welcome to the world of Stargazing!</h1>
-                <h4>This website aims to help you understand more about the amazing hobby of stargazing or spacial photography. You will learn a little bit of everything here, from tips of better night view to recommended equipment and a monthly updated calendar to help you keep track of everything! </h4>
+                <h1 class="home-title">WELCOME TO THE WORLD OF STARGAZING!</h1>
+                <h4>This website aims to help you understand a bit more about the amazing hobby of stargazing and spacial photography. You will learn the general basics here, from tips of better night view, to recommended equipment and a monthly updated calendar to help you keep track of everything! </h4>
                 <div class='calendar-buttom'>
-                    <a class='calendar-redirect' href="astronomic-calendar.html">See the calendar here!</a>
+                    <a class='calendar-redirect' href="astronomic-calendar.html">SEE THE SCHEDULE</a>
                 </div>
             </section>
 
@@ -36,21 +46,21 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/boreal.png" style="width:100%">
-                <div class="text">Aurora borealis</div>
+             
+                <img src="images/moon.png" style="width:100%">
+                <div class="text">Earth's Moon</div>
                 </div>
             
                 <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/starview.png" style="width:100%">
-                <div class="text">Starry sky</div>
+            
+                <img src="images/saturnplanet.png" style="width:100%">
+                <div class="text">Sixth planet, Saturn</div>
                 </div>
             
                 <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="images/supermoon.png" style="width:100%">
-                <div class="text">Blue supermoon (2023)</div>
+           
+                <img src="images/harley.png" style="width:100%">
+                <div class="text">Comet Halley</div>
                 </div>
             
                 <!-- Next and previous buttons -->
@@ -67,32 +77,33 @@
             </div>
             <!--============================================================================================-->
 
-            <div id="tips&info">
-                <section class="howtostart-card">
-                    <h2>How to start?</h2>
-                    <img class="card-img" src="images/peoplelooking.png" alt="people looking at the sky">
-                    <p>Thankfully we dont actually need anything to start stargazing! All you want to do is find a good spot to lay down and abserve the night sky. But if you want to a have a really good view, you need to travel away from your city, because cities are heavily light polluted, and that pollution conceal a huge ammount of the night stars.</p>
-                </section>
+            <div class="card-container">
+                <div class="howtostart-card">
+                    <div class='question-buttom'>
+                        <h2>HOW TO START ?</h2>
+                    </div>
+                    <p>Thankfully, we dont actually need anything special to start stargazing! All you want to do is find a good spot to lay down and abserve the night sky.<br> <br> But if you want to have a really good view, you'll need to travel away from your city, and that's because cities are heavily light polluted, and that pollution conceal a huge ammount of the stars.<br> <br> It's a little obvious, but if you use glasses, remember to clean and bring them with you, the whole experience will be so much better if you can actually see the stars. (I forgot my glasses once...)</p>
+                </div>
 
-                <section class="whattobring-card">
-                    <h2>What should I bring?</h2>
-                    <img class="card-img" src="images/meteorrain.png" alt="meteor rain">
-                    <p>There are three basic things that you should always bring even if you are going to stay at your backyard. The first one is snacks (especially if you're going to watch things that take hours like meteor showers). The second one is your cellphone with an app or something similar that can help you locate the constelations and planetes you want to see. And the last thing is patience! You are going to observe a natural phenomenon, you cant control the exact time it is going to happen, so bring lots of patience!</p>
-                </section>
+                <div class="whattobring-card">
+                    <div class='question-buttom2'>
+                        <h2>WHAT SHOULD I BRING ?</h2>
+                    </div>
+                    <p>There are three basic things that you should always bring, even if you are going to stay at your backyard.<br> <br>  The first one is snacks (especially if you're going to watch things that take hours like meteor showers), you dont want to miss it because you got hungry, do you?<br> <br> The second one is your cellphone with an app or something similar that can help you locate the constelations and planetes you want to see.<br> <br> And the last thing is patience! You are going to observe a natural phenomenon, you cant control the exact time it is going to happen, so bring lots of patience!</p>
+                </div>
 
-                <section class="whattools-card">
-                    <h2>What devices do I need?</h2>
-                    <img class="card-img" src="images/telescope.png" alt="humble telescope">
-                    <p>The most basic one is a pair of binoculars. They are going to help you locate planets more easily and are going to allow you to have a better view of certain events like the supermoons. If you want to look at planets then you will need a telescope. Telescopes are harder to use (and a good one is a bit expensive) and will require you to have some practice first, but they are going to allow a close view of our solar system planets! you can even see the charming colossal saturn rings with them! And the least popular one is a high zoom camera. These cameras are not as poweful as a telescope, but they will let you take amazing pictures of the closer celestial bodies like the moon and jupiter. You can also use both camera and telescope together in order to take high quality photos and videos of the planets and stars!</p>
-                </section>
+                <div class="whattools-card">
+                    <div class='question-buttom3'>
+                        <h2>WHAT DEVICES DO I NEED ?</h2>
+                    </div>
+                    <p>The most basic one is a pair of binoculars. They are going to help you locate constelations more easily and also allow you to have a better view of certain "close" events, like the supermoons and meteor showers.<br> <br> However, if you want to look at planets then you will need to get a telescope. Telescopes are harder to use (a good one is a bit expensive) and will require you to have some practice first, but they are going to let you have a close view of our solar system planets. With them you can even see the famous saturn rings!<br> <br> The least popular one is a high zoom camera. These cameras are not as poweful as a telescope, but they will let you take amazing pictures of the closer celestial bodies, like the moon and jupiter.<br> <br> If you want, you can also use both camera and telescope together in order to take high quality photos and videos of the planets and stars!</p>
+                </div>
 
-                <section class="extratips-card">
-                    <h2>Extra tips!</h2>
-                    <img class="card-img" src="images/jupitercamera.png" alt="jupiter camera photography">
-                    <p>Always check the weather forecast before going to stargaze, you really dont want to have your night ruined because of rain or clouds. <p>Differently from the stars, planets have a "fixed" bright, so if the "star" you are looking at is not rapidly blinking, its actually a planet!</p>
-                </section>
-                <div class='planet-buttom'>
-                    <a class='planet-redirect' href="planet-visibility.html">Discover the visible planets here!</a>
+                <div class="extratips-card">
+                    <div class='question-buttom4'>
+                        <h2>EXTRA TIPS !</h2>
+                    </div>
+                    <p>Always check the weather forecast before going to stargaze, you really dont want to have your night ruined because of rain or clouds.<br> <br> Differently from the stars, planets have a "fixed" bright, so if the "star" you are looking at is not rapidly blinking, its actually a planet!<br> <br> It's important to remember that your eyes need time to adapt to the dark. This process is called "dark adaptation" and it takes around 30 minutes to be done. So relax and don't use your phone in that time.<br> <br> If you bring a camera to your trip, try to photograph a star trail! Star trails are a kind of long exposure photos that aim to catch the movement of the stars in the sky (that "movement" happens because of the rotation of the Earth). You can take this kind of photo by leaving your camera taking pictures repeatedly at short intervals through the night and stack them on top of each other!</p>
                 </div>
             </div>
         </main>
@@ -100,6 +111,7 @@
         <footer>
             <p>Celestial Astronomy &copy; 2023 - Victor Andrade</p>
             <p><a href="site-plan.html">Site Plan</a></p>
+            <p class="resize"> o </p>
             <p><a href="contactme.html">Contact me</a></p>
         </footer>
 
