@@ -289,7 +289,9 @@ h2 {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  font-family: var(--heading-font);
+  color: #a5f7f5;
+  text-shadow: -5px 5px 15px#92e4e2;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
