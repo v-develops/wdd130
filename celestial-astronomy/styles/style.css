@@ -223,7 +223,7 @@ h2 {
   padding: 10px;
   margin-left: 110px;
   margin-right: 110px;
-  margin-bottom: 50px;
+  margin-bottom: 130px;
   margin-top: 100px;
   border: 12px solid #80D8D6;
   box-shadow: -2px 2px 25px #92e4e2;
@@ -240,10 +240,56 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /*height: 100vh;*/
   margin: 0;
-  margin-left: 350px;
+  margin-left: 340px;
 }
+
+.solar-title {
+  padding-top: 50px;
+}
+
+.planet-container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  border: 12px solid #80D8D6;
+  box-shadow: -2px 2px 25px #92e4e2;
+  background-color: rgba(152, 152, 152, 0.8);
+  border-radius: 30px;
+}
+
+.planet-card-img {
+  transition: transform .5s;
+}
+
+.planet-card-img:hover {
+  transform: scale(1.1);
+}
+
+.curiosities-title {
+  color: #f2f2f2;
+  font-size: 34px;
+  margin-top: 220px;
+  margin-bottom: 135px;
+  margin-left: 600px;
+  margin-right: 600px;
+  border: 8px solid #80D8D6;
+  background-color: rgba(152, 152, 152, 0.8);
+  box-shadow: -2px 2px 15px #92e4e2;
+  text-shadow: none;
+  border-radius: 50px;
+}
+
+/* Child 2 solar model========================================================================*/
+
 /*============================================================================================*/
 
 * {box-sizing:border-box}
@@ -404,3 +450,40 @@ div.desc {
   clear: both;
 }
 /*============================================================================================*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgba(152, 152, 152, 0.8);
+  border: 12px solid rgba(140, 140, 140, 0.8);
+  cursor: pointer;
+  padding: 20px;
+  width: 70%;
+  border-radius: 20px;
+  margin-left: 225px;
+  font-family: var(--heading-font);
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.panel p {
+  color: #a5f7f5;
+  text-shadow: -5px 5px 15px#92e4e2;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  border: 12px solid #80D8D6;
+  box-shadow: -2px 2px 15px #92e4e2;
+  color: #a5f7f5;
+  text-shadow: -5px 5px 15px#92e4e2;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 20px;
+  margin-left: 240px;
+  margin-right: 240px;
+  display: none;
+  overflow: hidden;
+}

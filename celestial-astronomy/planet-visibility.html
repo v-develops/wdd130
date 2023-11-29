@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="styles/style.css">
   <style>
         body {
-          background-image: url('images/galaxy.png');
+          background-image: url('images/galaxy2.png');
           background-repeat: no-repeat;
           background-attachment: fixed;
+          background-position: 100%;
         }
 
     /*body {
@@ -23,10 +24,11 @@
     .solar-system {
       position: relative;
       width: 800px;
-      height: 650px;
-      /*border: 2px solid #000;
-      border-radius: 10px;*/
+      height: 710px;
       overflow: hidden;
+      color: #80D8D6;
+      text-shadow: 0px 0px 2px#92e4e2;
+      font-size: 25px;
     }
 
     .sun {
@@ -59,29 +61,29 @@
 
     .planet.venus {
       animation: orbit-venus 6s linear infinite;
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       background-color: #e6e6e6 ;
     }
 
     .planet.earth {
       animation: orbit-earth 8s linear infinite;
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
       background-color: #3498db;
     }
 
     .planet.mars {
       animation: orbit-mars 20s linear infinite;
-      width: 18px;
-      height: 18px;
+      width: 12px;
+      height: 12px;
       background-color: #993d00;
     }
 
     .planet.jupiter {
       animation: orbit-jupiter 40s linear infinite;
-      width: 35px;
-      height: 35px;
+      width: 28px;
+      height: 28px;
       background-color: #b07f35;
     }
 
@@ -94,17 +96,19 @@
 
     .planet.uranus {
       animation: orbit-uranus 50s linear infinite;
-      width: 24px;
-      height: 22px;
+      width: 22px;
+      height: 18px;
       background-color: #6f9ecb;
     }
 
     .planet.neptune {
       animation: orbit-neptune 60s linear infinite;
-      width: 26px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       background-color: rgb(30, 55, 147);
     }
+
+    
 
     @keyframes spin {
       0% { transform: rotate(0deg); }
@@ -127,33 +131,33 @@
     }
 
     @keyframes orbit-earth {
-      0% { transform: rotate(20deg) translateX(140px) rotate(0deg); }
-      100% { transform: rotate(380deg) translateX(140px) rotate(-360deg); }
+      0% { transform: rotate(0deg) translateX(140px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(140px) rotate(-360deg); }
     }
 
     @keyframes orbit-mars {
-      0% { transform: rotate(50deg) translateX(170px) rotate(0deg); }
-      100% { transform: rotate(410deg) translateX(170px) rotate(-360deg); }
+      0% { transform: rotate(0deg) translateX(170px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(170px) rotate(-360deg); }
     }
 
     @keyframes orbit-jupiter {
-      0% { transform: rotate(90deg) translateX(200px) rotate(0deg); }
-      100% { transform: rotate(450deg) translateX(200px) rotate(-360deg); }
+      0% { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
     }
 
     @keyframes orbit-saturn {
-      0% { transform: rotate(140deg) translateX(240px) rotate(0deg); }
-      100% { transform: rotate(500deg) translateX(240px) rotate(-360deg); }
+      0% { transform: rotate(0deg) translateX(240px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(240px) rotate(-360deg); }
     }
 
     @keyframes orbit-uranus {
-      0% { transform: rotate(180deg) translateX(270px) rotate(0deg); }
-      100% { transform: rotate(540deg) translateX(270px) rotate(-360deg); }
+      0% { transform: rotate(0deg) translateX(270px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(270px) rotate(-360deg); }
     }
 
     @keyframes orbit-neptune {
-      0% { transform: rotate(220deg) translateX(300px) rotate(0deg); }
-      100% { transform: rotate(580deg) translateX(300px) rotate(-360deg); }
+      0% { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
     }
   </style>
 </head>
@@ -177,70 +181,98 @@
             <section id="introduction">
                 <h1 class="home-title">NIGHT SKY PLANET VISIBILITY</h1>
                 <h4>Some planets like Jupiter and Venus are pretty easy to find when you look at the sky, but the others are a little bit more difficult to locate, so this page will tell you what planets are currently visible in the night sky!</h4>
+                <h1 class="solar-title"></h1>
             </section>
 
             <div class="solar-system">
                 <div class="sun"></div>
-                <div class="planet mercury"></div>
-                <div class="planet venus"></div>
-                <div class="planet earth"></div>
-                <div class="planet mars"></div>
-                <div class="planet jupiter"></div>
-                <div class="planet saturn"></div>
-                <div class="planet uranus"></div>
-                <div class="planet neptune"></div>
+                <div class="planet mercury">
+                  <p>☿</p>
+                </div>
+                <div class="planet venus">
+                  <p>♀</p>
+                </div>
+                <div class="planet earth">
+                  <p>♁</p>
+                </div>
+                <div class="planet mars">
+                  <p>♂</p>
+                </div>
+                <div class="planet jupiter">
+                  <p>♃</p>
+                </div>
+                <div class="planet saturn">
+                  <p>♄</p>
+                </div>
+                <div class="planet uranus">
+                  <p>♅</p>
+                </div>
+                <div class="planet neptune">
+                  <p>♆</p>
+                </div>
             </div>
 
-            <div id="planets-info">
-                <section class="planet-1">
-                    <img class="card-img" src="images/mercury.png" alt="mercury symbol">
-                    <h2>Mercury</h2>
-                    <p>Visible</p>
-                    <p>Curiosities: Mercury's sun-facing side is scorched by temperatures of around 430°C, hot enough to melt lead. The intense changes in temperature from day to night make it impossible for life as we know to exist in this scorching planet. It is the closest planet to the Sun, but Mercury isn't the hottest in the whole solar system. Venus's atmosphere causes a "greenhouse effect", resulting in even higher temperatures.</p>
-                </section>
+            <section id="introduction">
+              <h4 class="currently-month">PLANETS</h4>
+            </section>
 
-                <section class="planet-2">
-                    <img class="card-img" src="images/venus.png" alt="venus symbol">
-                    <h2>Venus</h2>
-                    <p>Visible</p>
-                    <p>Curiosities: A day on Venus is almost longer than a year! And thats because Venus takes 243 Earth days to fully rotate once on its axis. The clouds of sulphuric acid located in Venus atmosphere make it very reflective and shiny, its brightness makes it visible even during the day if you know where to look. This atmosphere also conceal its surface from our view.</p>
-                </section>
-
-                <section class="planet-4">
-                    <img class="card-img" src="images/mars.png" alt="mars symbol">
-                    <h2>Mars</h2>
-                    <p>Invisible</p>
-                    <p>Curiosities: Mars is the second smallest planet in the solar system, losing just to Mercury. It can get pretty cold on Mars! And much colder than our own planet, since it's even further away from the sun, this planet can get temperatures down to -140°C! The highest mountain in our solar system (a volcano called Olympus Mons) is located in Mars, having 24 kilometres high, it's about three times the height of Mount Everest!</p>
-                </section>
-
-                <section class="planet-5">
-                    <img class="card-img" src="images/jupiter.png" alt="jupiter symbol">
-                    <h2>Jupiter</h2>
-                    <p>Visible</p>
-                    <p>Curiosities: Jupiter is more than twice as massive as all other Solar System planets combined! And 318 times as massive as Earth. 1321 Earths could fit within a Jupiter-sized sphere! The length of the day in Jupiter is almost 9.93 hours. Jupiter has a total of 92 Moons, the four largest are known as the Galilean moons (Io, Europa, Ganymede and Callisto), and 12 of these 92 moons were discovered as recently as February 2023!</p>
-                </section>
-
-                <section class="planet-6">
-                    <img class="card-img" src="images/saturn.png" alt="saturn symbol">
-                    <h2>Saturn</h2>
-                    <p>Visible</p>
-                    <p>Curiosities: It takes around 3 whole years to travel from Earth to Saturn. Saturn's rings look solid, but they are actually a glittering shower of ice and rocks! the rings also stretch almost as far into space as the distance between the Earth and the moon (384.400 km)</p>
-                </section>
-
-                <section class="planet-7">
-                    <img class="card-img" src="images/uranus.png" alt="uranus symbol">
-                    <h2>Uranus</h2>
-                    <p>Invisible</p>
-                    <p>Curiosities: Uranus was the first planet to be found with a telescope. Other planets like Venus and Jupiter can be seen in the night sky without a telescope, however Uranus cannot. Uranus is an "Ice-Gigant", and it is the coldest planet in the whole solar system. Just like Saturn, Uranus also have a set of rings! but they are lot smaller. All of the other planets in the solar system are named after Roman Gods, except Uranus. Instead, Uranus is named after a Greek God.</p>
-                </section>
-
-                <section class="planet-8">
-                    <img class="card-img" src="images/neptune.png" alt="neptune symbol">
-                    <h2>Neptune</h2>
-                    <p>Invisible</p>
-                    <p>Curiosities: A year on Neptune is equivalent to 164.81 Years on Earth! Thats because Neptune is so far from the Sun, that it takes a very long time to orbit around it and complete a year. Voyager 2 is the only spacecraft to have only passad close to Neptune, and no humans were on board. No spacecraft has ever orbited Neptune to study it at up close, thats because Neptune is so far away from us, that becomes very difficult to build something that can make such a journey and stay intact to do the required research.</p>
-                </section>
+            <div class="planet-container">
+              <img class="planet-card-img" src="images/mercury.png" alt="Mercury Symbol">
+              <img class="planet-card-img" src="images/venus.png" alt="Venus Symbol">
+              <img class="planet-card-img" src="images/mars.png" alt="Mars Symbol">
+              <img class="planet-card-img" src="images/jupiter.png" alt="Jupiter Symbol">
+              <img class="planet-card-img" src="images/saturn.png" alt="Saturn Symbol">
+              <img class="planet-card-img" src="images/uranus.png" alt="Uranus Symbol">
+              <img class="planet-card-img" src="images/neptune.png" alt="Neptune Symbol">
             </div>
+
+            <h4 class="small-tip">The glowing one's are the currently visible planets in the night sky!<br><br>(You will need binoculars to see Uranus and Neptune)</h4>
+
+            <section id="introduction">
+              <h4 class="curiosities-title">CURIOSITIES</h4>
+            </section>
+
+            <!--============================================================================================-->
+            <button class="accordion">MERCURY</button>
+            <div class="panel">
+              <p>- Mercury's sun-facing side is burned by temperatures of around 430°C, hot enough to melt lead.<br><br>- The intense changes in temperature from day to night make it impossible for life as we know to exist in this scorching planet.<br><br>- It is the closest planet to the Sun, but Venus is actually the hottest planet!</p>
+            </div>
+
+            <button class="accordion">VENUS</button>
+            <div class="panel">
+              <p>- A day on Venus is almost longer than a year! And thats because Venus takes 243 Earth days to fully rotate once on its axis.<br><br>- The clouds of sulphuric acid located in Venus atmosphere make it very reflective and shiny, its brightness makes it visible even during the day!<br><br>- This dense atmosphere also completely conceals its surface from our view.</p>
+            </div>
+
+            <button class="accordion">MARS</button>
+            <div class="panel">
+              <p>- Mars is the second smallest planet in the solar system, losing just to Mercury.<br><br>- It can get pretty cold on Mars! And much colder than our own planet, since it's even further away from the sun, this planet can get temperatures down to -140°C!<br><br>- The highest mountain in our solar system (a volcano called Olympus Mons) is located in Mars, having 24 kilometres high, it's about three times the height of Mount Everest!</p>
+            </div>
+
+            <button class="accordion">JUPITER</button>
+            <div class="panel">
+              <p>- Jupiter is more than twice as massive as all other Solar System planets combined! And 318 times as massive as Earth.<br><br>- 1321 Earths could fit within a Jupiter-sized sphere! and the length of the day in Jupiter is almost 9.93 hours.<br><br>- Jupiter has a total of 92 Moons, the four largest ones are known as the Galilean moons (Io, Europa, Ganymede and Callisto), and 12 of these 92 moons were discovered as recently as February 2023!</p>
+            </div>
+
+            <button class="accordion">SATURN</button>
+            <div class="panel">
+              <p>- It takes around 3 whole years to travel from Earth to Saturn.<br><br>- Saturn's rings look solid, but they are actually a glittering shower of ice and rocks!<br><br>- The rings also stretch almost as far into space as the distance between the Earth and the moon (384.400 km)</p>
+            </div>
+
+            <button class="accordion">URANUS</button>
+            <div class="panel">
+              <p>- Uranus was the first planet to be found with a telescope. Other planets like Venus and Jupiter can be seen in the night sky without a telescope, however Uranus cannot.<br><br>- Uranus is an "Ice-Gigant", and it is the coldest planet in the whole solar system.<br><br>- Just like Saturn, Uranus also have a set of rings! but they are lot smaller.<br><br>- All of the other planets in the solar system are named after Roman Gods, except Uranus. Instead, Uranus is named after a Greek God.</p>
+            </div>
+
+            <button class="accordion">NEPTUNE</button>
+            <div class="panel">
+              <p>- A year on Neptune is equivalent to 164.81 Years on Earth! Thats because Neptune is so far from the Sun, that it takes a very long time to orbit around it and complete a year.<br><br>- Voyager 2 is the only spacecraft to have passad close to Neptune, and no humans were on board.<br><br>- No spacecraft has ever orbited Neptune to study it at up close, thats because Neptune is so far away from us, that becomes very difficult to build something that can make such a journey and stay intact to do the required research.</p>
+            </div>
+            <!--============================================================================================-->
+
+            <div class='calendar-buttom'>
+              
+            </div>
+
         </main>
 
         <footer>
@@ -251,6 +283,29 @@
         </footer>
 
     </div>
+
+    <!--============================================================================================-->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <!--============================================================================================-->
 </body>
 
 </html>
