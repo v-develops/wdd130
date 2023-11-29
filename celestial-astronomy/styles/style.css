@@ -289,7 +289,24 @@ h2 {
 }
 
 /* Child 2 solar model========================================================================*/
+.solar-sign-buttom {
+  padding-top: 20px;
+}
 
+.solar-sign {
+  color: #a5f7f5;
+  text-shadow: -5px 5px 15px#92e4e2;
+  text-decoration: none;
+  font-family: var(--heading-font);
+  padding: 10px;
+  margin-top: 50px;
+  border: 8px solid #80D8D6;
+  background-color: rgba(152, 152, 152, 0.8);
+  box-shadow: -2px 2px 15px #92e4e2;
+  border-radius: 50px;
+  margin-left: 600px;
+  margin-right: 600px;
+}
 /*============================================================================================*/
 
 * {box-sizing:border-box}
