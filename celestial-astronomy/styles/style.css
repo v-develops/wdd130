@@ -55,14 +55,14 @@ nav a {
   text-decoration: none;
   color: #ffffff;
   border: 8px solid rgba(152, 152, 152, 0.8);
-  box-shadow: 0px 1px 10px #6f7364; /* Darker color for the shadow */
+  box-shadow: 0px 1px 10px rgba(152, 152, 152, 0.8);
   border-radius: 50px;
 }
 
 nav a:hover {
   border: 8px solid #80D8D6;
   box-shadow: -2px 2px 15px #80D8D6;
-  color: #a5f7f5; /* Brighter color for the neon text */
+  color: #80D8D6;
   text-shadow: -5px 5px 15px#80D8D6;
   border-radius: 50px;
 }
@@ -94,7 +94,7 @@ footer a {
 footer a:hover {
   border: 8px solid #80D8D6;
   box-shadow: -2px 2px 15px #80D8D6;
-  color: #a5f7f5; /* Brighter color for the neon text */
+  color: #80D8D6;
   text-shadow: -5px 5px 15px#80D8D6;
   border-radius: 50px;
 }
@@ -142,7 +142,7 @@ h4 {
 }
 
 .calendar-redirect:hover {
-  color: #a5f7f5; /* Brighter color for the neon text */
+  color: #80D8D6;
   text-shadow: -5px 5px 15px#80D8D6;
   border: 8px solid #80D8D6;
   box-shadow: -2px 2px 15px #80D8D6;
@@ -293,7 +293,7 @@ h2 {
 }
 
 .solar-sign {
-  color: #a5f7f5; /* Brighter color for the neon text */
+  color: #80D8D6;
   text-shadow: -5px 5px 15px#80D8D6;
   text-decoration: none;
   font-family: var(--heading-font);
@@ -344,15 +344,10 @@ h2 {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 /* Caption text */
 .text {
   font-family: var(--heading-font);
-  color: #a5f7f5; /* Brighter color for the neon text */
+  color: #80D8D6;
   text-shadow: -5px 5px 15px#80D8D6;
   font-size: 15px;
   padding: 8px 12px;
@@ -385,7 +380,7 @@ h2 {
 }
 
 .active, .dot:hover {
-  background-color: #6f7364; /* Darker color for the shadow */
+  background-color: rgba(152, 152, 152, 0.8);
 }
 
 /* Fading animation */
@@ -483,7 +478,7 @@ div.desc {
 }
 
 .panel p {
-  color: #a5f7f5; /* Brighter color for the neon text */
+  color: #80D8D6;
   text-shadow: -5px 5px 15px#80D8D6;
 }
 
@@ -491,7 +486,7 @@ div.desc {
 .active, .accordion:hover {
   border: 12px solid #80D8D6;
   box-shadow: -2px 2px 15px #80D8D6;
-  color: #a5f7f5; /* Brighter color for the neon text */
+  color: #80D8D6;
   text-shadow: -5px 5px 15px#80D8D6;
 }
 
