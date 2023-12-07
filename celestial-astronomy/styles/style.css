@@ -240,8 +240,7 @@ h2 {
   align-items: center;
   justify-content: center;
   /*height: 100vh;*/
-  margin: 0;
-  margin-left: 340px;
+  margin: 0 auto;
 }
 
 .solar-title {
@@ -298,13 +297,12 @@ h2 {
   text-decoration: none;
   font-family: var(--heading-font);
   padding: 10px;
-  margin-top: 50px;
   border: 8px solid #80D8D6;
   background-color: rgba(152, 152, 152, 0.8);
   box-shadow: -2px 2px 15px #80D8D6;
   border-radius: 50px;
-  margin-left: 600px;
-  margin-right: 600px;
+  margin: 50px auto 0 auto; /* IMPORTANT */
+  
 }
 /*============================================================================================*/
 
