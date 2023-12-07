@@ -243,6 +243,10 @@ h2 {
   margin: 0 auto;
 }
 
+#solar_redirect {
+  margin-top: 100px
+}
+
 .solar-title {
   padding-top: 50px;
 }
@@ -254,7 +258,8 @@ h2 {
   align-items: center;
 }
 
-.planet-container img {
+.planet-card-img {
+  transition: transform .5s;
   max-width: 100%;
   height: auto;
   margin: 20px;
@@ -264,11 +269,21 @@ h2 {
   border-radius: 30px;
 }
 
-.planet-card-img {
+.planet-card-off-img {
   transition: transform .5s;
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  border: 12px solid rgba(152, 152, 152, 0.8);
+  background-color: rgba(152, 152, 152, 0.8);
+  border-radius: 30px;
 }
 
 .planet-card-img:hover {
+  transform: scale(1.1);
+}
+
+.planet-card-off-img:hover {
   transform: scale(1.1);
 }
 
@@ -292,17 +307,22 @@ h2 {
 }
 
 .solar-sign {
-  color: #80D8D6;
-  text-shadow: -5px 5px 15px#80D8D6;
+  color: #ffffff;
   text-decoration: none;
   font-family: var(--heading-font);
   padding: 10px;
-  border: 8px solid #80D8D6;
+  border: 8px solid rgba(152, 152, 152, 0.8);
   background-color: rgba(152, 152, 152, 0.8);
-  box-shadow: -2px 2px 15px #80D8D6;
   border-radius: 50px;
   margin: 50px auto 0 auto; /* IMPORTANT */
-  
+}
+
+.solar-sign:hover {
+  color: #80D8D6;
+  text-shadow: -5px 5px 15px#80D8D6;
+  border: 8px solid #80D8D6;
+  box-shadow: -2px 2px 15px #80D8D6;
+  border-radius: 50px;
 }
 /*============================================================================================*/
 
