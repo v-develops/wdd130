@@ -1,0 +1,21 @@
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border: 1px black;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 10px;
+}
